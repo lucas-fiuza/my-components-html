@@ -51,6 +51,7 @@ div.input-field, div.select-field {
 div.input-field.active, div.select-field.active {
     border-bottom: 1px solid #2980B9;
     border-collapse: collapse;
+    box-shadow: 0 1px 0 0 #2980B9;
 }
 
 div.input-field.error{
@@ -86,6 +87,41 @@ input.input-field[type='text']{
     outline: none;
     font-size: 16px;
     color: #706F6F;
+}
+
+input.input-field[type='number']{
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    color: #706F6F;
+    appearance: none;
+}
+
+input.input-field[type='number']::-webkit-inner-spin-button,
+input.input-field[type='number']::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+div.nav-number{
+    position: absolute;
+    background-color: white;
+    font-size: 10px;
+    bottom: 0px;
+    right: 0px;
+}
+
+div.nav-number span.more,
+div.nav-number span.less{
+    display: block;
+    cursor: pointer;
+}
+
+div.nav-number span.more:hover,
+div.nav-number span.less:hover{
+    box-shadow: 0px 0px 0px 1px #706F6F;
 }
 
 input.input-field::placeholder{
