@@ -1,173 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <style>
-            /**
-                Input Component
-                Inicio
-            **/
-            div.input-field, div.select-field {
-                border-bottom: 1px solid #99A4AE;
-                margin: 5px;
-                margin-top: 20px;
-                font-family: 'Open Sans', sans-serif;
-                display: flex;
-                flex-direction: column;
-                position: relative;
-                height: 22px;
-                min-width: 100px;
-            }
-
-            div.input-field.active, div.select-field.active {
-                border-bottom: 1px solid #2980B9;
-                border-collapse: collapse;
-            }
-
-            div.input-field.error{
-                border-bottom: 1px solid #B92929;
-            }
-
-            div.input-field.success{
-                border-bottom: 1px solid #2ECC71;
-            }
-            
-            div.input-field > label {
-                color: #9e9e9e;
-                position: absolute;
-                top: 0;
-                left: 0;
-                font-size: 1rem;
-                cursor: text;
-                transition: transform .2s ease-out, color .2s ease-out, -webkit-transform .2s ease-out;
-                transform-origin: 0% 100%;
-                text-align: initial;
-                transform: translateY(-2px);
-                width: 100%;
-            }
-
-            div.input-field > label.on-focus {
-                transform: translateY(-16px) scale(0.6);
-                transform-origin: 0 0;
-            }
-
-            input.input-field[type='text']{
-                border: none;
-                background: none;
-                outline: none;
-                font-size: 16px;
-                color: #706F6F;
-            }
-
-            input.input-field::placeholder{
-                opacity: .5;
-            }
-            
-            
-            div.input-field > span {
-                margin-top: 2px;
-                font-size: 12px;
-                opacity: 0;
-            }
-            div.input-field > span.active{
-                opacity: 1;
-                color: #706F6F;
-            }
-            
-            div.input-field > span.error-alert {
-                color: #B92929;
-                opacity: 1;
-            }
-
-            div.input-field > span.success-alert {
-                color: #2ECC71;
-                opacity: 1;
-            }
-            /**
-                Fim
-            **/
-
-            /**
-                Select Field
-                Inicio
-            **/
-            div.select-field {
-                padding-bottom: 5px;
-            }
-
-            div.select-field > input {
-                border: none;
-                font-size: 1em;
-                width: calc(100% - 20px);
-                font-family: 'Open Sans', sans-serif;
-                display: block;
-            }
-                div.select-field label{
-                    position: absolute;
-                    font-size: .7em;
-                    transform: translateY(-15px);
-                    color:#696969;
-                }
-            
-                div.select-field > input.select-content {
-                    outline: none;
-                    cursor: pointer;
-                }
-
-                div.select-field span.btn-select {
-                    border-radius: 10px;
-                    color: #1DAF5B;
-                    width: 12px;
-                    text-align: center;
-                    position: absolute;
-                    right: 0px;
-                    cursor: pointer;
-                    background-color: white;
-                    transition: .3s ease-in-out;
-                }
-
-                div.select-field span.btn-select.open {
-                    transform: rotate(180deg);
-                    transition: .3s ease-in-out;
-                }
-
-                div.select-field ul.open{
-                    transform: scale(1);
-                    transform-origin: 0 0;
-                    opacity: 1;
-                    transition: .3s ease-in;
-                    z-index: 1001;
-                }
-
-                div.select-field ul {
-                    list-style: none;
-                    list-style-type: none;
-                    padding: 0px;
-                    margin: 5px 2px 2px 2px;
-                    color: black;
-                    box-shadow: 2px 1px 4px 2px #69696999;
-                    transition: .3s ease-out;
-                    transform: scale(0);
-                    transform-origin: 0 0;
-                    opacity: 0;
-                    background-color: white;
-                }
-
-                div.select-field ul > li {
-                    padding: 10px 15px 10px 15px;
-                    font-size: .9em;
-                    
-                }
-
-                div.select-field ul > li:hover{
-                    background-color: #e2e2e2;
-                    cursor: pointer;
-                }
-                
-                /**
-                    Fim
-                **/
-
-        </style>
+        <title>Index</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
@@ -231,105 +66,53 @@
             </div>
         </div>
 
+        <div style="width: 50%; margin-top: 10px;">
+            <div class="accordion">
+                <div class="accordion_tab">
+                    Opção 1
+                    <div class="accordion_arrow">
+                        <svg enable-background="new 0 0 32 32"  id="Layer_1" version="1.1" viewBox="0 0 32 32"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M14.77,23.795L5.185,14.21c-0.879-0.879-0.879-2.317,0-3.195l0.8-0.801c0.877-0.878,2.316-0.878,3.194,0  l7.315,7.315l7.316-7.315c0.878-0.878,2.317-0.878,3.194,0l0.8,0.801c0.879,0.878,0.879,2.316,0,3.195l-9.587,9.585  c-0.471,0.472-1.104,0.682-1.723,0.647C15.875,24.477,15.243,24.267,14.77,23.795z" fill="#ffffff"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion_content">
+                    
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion_tab">
+                    Opção 2
+                    <div class="accordion_arrow">
+                        <svg enable-background="new 0 0 32 32"  id="Layer_1" version="1.1" viewBox="0 0 32 32"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M14.77,23.795L5.185,14.21c-0.879-0.879-0.879-2.317,0-3.195l0.8-0.801c0.877-0.878,2.316-0.878,3.194,0  l7.315,7.315l7.316-7.315c0.878-0.878,2.317-0.878,3.194,0l0.8,0.801c0.879,0.878,0.879,2.316,0,3.195l-9.587,9.585  c-0.471,0.472-1.104,0.682-1.723,0.647C15.875,24.477,15.243,24.267,14.77,23.795z" fill="#ffffff"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion_content">
+
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion_tab">
+                    Opção 3
+                    <div class="accordion_arrow">
+                        <svg enable-background="new 0 0 32 32"  id="Layer_1" version="1.1" viewBox="0 0 32 32"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M14.77,23.795L5.185,14.21c-0.879-0.879-0.879-2.317,0-3.195l0.8-0.801c0.877-0.878,2.316-0.878,3.194,0  l7.315,7.315l7.316-7.315c0.878-0.878,2.317-0.878,3.194,0l0.8,0.801c0.879,0.878,0.879,2.316,0,3.195l-9.587,9.585  c-0.471,0.472-1.104,0.682-1.723,0.647C15.875,24.477,15.243,24.267,14.77,23.795z" fill="#ffffff"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="accordion_content">
+
+                </div>
+            </div>
+        </div>
+
         <!--Jquery-->
         <script src="./node_modules/jquery/dist/jquery.min.js"></script>
         <script src="./node_modules/jquery/dist/jquery.slim.js"></script>
 
         <!--Application Script-->
-        <script>
-            
-            $(document).ready(function(){
-                /** 
-                    Input Field
-                    Inicio
-                **/
-                $('div.input-field > label').click(function(event){
-                    var input = $(this).siblings('input.input-field');
-                    input.focus();
-                    var activeClass = $(this).hasClass('on-focus');
-                    if(!activeClass) {
-                        $(this).addClass('on-focus');
-                    }
-                });
-
-                $('input.input-field').focusout(function(event){
-                    var hasValue = $(this).val();
-                    if(hasValue === ""){
-                        $(this).siblings('label').removeClass('on-focus');
-                    }
-                    $(this).closest('div.input-field').removeClass('active');
-                });
-
-                $('input.input-field').focusin(function(event){
-                    $(this).siblings('label').addClass('on-focus');
-                    $(this).closest('div.input-field').addClass('active');
-                });
-                /*
-                    Fim
-                */
-
-                /*
-                    Select Field
-                    Inicio
-                */
-
-                $('div.select-field').click(function(event) {
-                    var ul = $(this).find('ul');
-                    var span = $(this).find('span');
-
-                    if($(this).hasClass('open')){
-                        $(this).removeClass('open');
-                        $(ul).removeClass('open');
-                        $(span).removeClass('open');
-                    } else {
-                        $(this).addClass('open');
-                        $(ul).addClass('open');
-                        $(span).addClass('open');
-                    }
-
-                    return false;
-                });
-
-                $('div.select-field ul>li').click(function(){
-
-                    var component = $(this).closest('div.select-field');
-                    var input = $(component).find('input');
-                    
-                    var ul = $(component).find('ul');
-                    var span = $(component).find('span');
-
-                    input.val($(this).text());
-
-                    $(component).removeClass('open');
-                    $(ul).removeClass('open');
-                    $(span).removeClass('open');
-
-                    $(component).addClass('active');
-
-                    return false;
-                });
-                
-                $(document).mouseup(function(e){
-
-                    if($('div.select-field').is('.open') === true){
-                        $('div.select-field.open').each(function(e){
-                            var ul = $(this).find('ul');
-                            var span = $(this).find('span');
-
-                            $(this).removeClass('open');
-                            $(ul).removeClass('open');
-                            $(span).removeClass('open');
-                        });
-                    };
-
-                    return false;
-                });
-                
-                /*
-                    Fim
-                */
-
-            });
-        </script>
+        <script text="javascript" src="script.js"></script>
     </body>
 </html>
