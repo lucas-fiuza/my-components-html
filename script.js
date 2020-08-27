@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     $('input.input-field').focusout(function(event){
         var hasValue = $(this).val();
-        if(hasValue === ""){
+        if(hasValue === "") {
             $(this).siblings('label').removeClass('on-focus');
         }
         $(this).closest('div.input-field').removeClass('active');
@@ -27,6 +27,32 @@ $(document).ready(function(){
     /*
         Fim
     */
+   /*
+        Input Number
+        Inicio
+   */
+    $('div.nav-number>span').click(function(event){
+        var item = $(this).attr('class');
+        var inputcomponet = $(this).parent().siblings('input.input-field');
+
+        var hasValue = inputcomponet.val();
+
+        if(!hasValue) {
+            $(this).parent().siblings('label').addClass('on-focus');
+            inputcomponet.val(0);
+        }
+
+        if(item === 'more') {
+            inputcomponet.val(parseInt(inputcomponet.val()) + 1);
+        } else if (item === 'less') {
+            inputcomponet.val(parseInt(inputcomponet.val()) - 1);
+        } else {
+            console.log('Error create component.')
+        }
+    });
+   /* 
+        Fim
+   */
 
     /*
         Select Field
